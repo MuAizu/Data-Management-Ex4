@@ -5,6 +5,13 @@ import java.lang.*;
 class diceGame{
 	private static final int SIDE_OF_DICE = 6;
 	public static void main(String[] args){
+		System.out.println("What is your name? ");
+		Scanner scanner = new Scanner(System.in);
+        	String name = scanner.nextLine();
+
+		System.out.println("Hello, " + name + "!");
+
+
 		System.out.println("Rolling the dice...");
 		Random rand = new Random();
 		int dice1 = rand.nextInt(SIDE_OF_DICE) + 1;
@@ -16,8 +23,8 @@ class diceGame{
 				   "\nTotal value: " + total);
 
 		if(total > 7)
-			System.out.println("You won!");
+			System.out.println(name + " won!");
 		else
-			System.out.println("You lost...");
+			System.out.println(name + " lost...");
 	}
 }
