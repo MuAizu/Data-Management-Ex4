@@ -9,9 +9,10 @@ class diceGame{
 		Random rand = new Random();
 		int dice1 = rand.nextInt(SIDE_OF_DICE) + 1;
 		int dice2 = rand.nextInt(SIDE_OF_DICE) + 1;
+		int total = dice1 + dice2;
 		
 		System.out.println("Die 1: " + dice1 + 
 				   "\nDie 2: " + dice2 + 
-				   "\nTotal value: " + (dice1 + dice2));
+				   "\nTotal value: " + total);
 	}
 }
